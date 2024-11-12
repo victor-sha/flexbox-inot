@@ -118,7 +118,7 @@ var messages = {
     'fr': 'Flexbox Froggy est créé par',
     'pt-br': 'Flexbox Froggy foi criado por',
     'es': 'Flexbox Froggy es una creación de',
-    'ru': 'Игра Flexbox Froggy создана',
+    'ru': 'Игра Flexbox Inot создана на основе Flexbox Froggy',
     'fa': 'قورباغه فلکس باکس ساخته شده توسط',
     'zh-cn': 'Flexbox Froggy的作者是',
     'zh-tw': 'Flexbox Froggy的作者是',
