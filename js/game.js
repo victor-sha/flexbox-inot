@@ -461,7 +461,7 @@ var game = {
 
   transform: function() {
     var scale = 1 + ((Math.random() / 5) - 0.2);
-    var rotate = 360 * Math.random();
+    var rotate = 0//360 * Math.random();
 
     return {'transform': 'scale(' + scale + ') rotate(' + rotate + 'deg)'};
   },
