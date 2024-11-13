@@ -1,10 +1,10 @@
 var game = {
-  colorblind: (localStorage.colorblind && JSON.parse(localStorage.colorblind)) || 'false',
+  colorblind: 'false',
   language: window.location.hash.substring(1) || 'en',
-  difficulty: 'easy',
-  level: parseInt(localStorage.level, 10) || 0,
-  answers: (localStorage.answers && JSON.parse(localStorage.answers)) || {},
-  solved: (localStorage.solved && JSON.parse(localStorage.solved)) || [],
+  difficulty: 'medium',
+  level: 0,
+  answers: {},
+  solved: [],
   changed: false,
   clickedCode: null,
 
@@ -167,23 +167,9 @@ var game = {
     });
 
     $(window).on('beforeunload', function() {
-      game.saveAnswer();
-      localStorage.setItem('level', game.level);
-      localStorage.setItem('answers', JSON.stringify(game.answers));
-      localStorage.setItem('solved', JSON.stringify(game.solved));
-      localStorage.setItem('colorblind', JSON.stringify(game.colorblind));
     }).on('hashchange', function() {
       game.language = window.location.hash.substring(1) || 'en';
       game.translate();
-
-      $('#tweet iframe').remove();
-      var html = '<a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="https://flexboxfroggy.com" data-via="thomashpark">Tweet</a> ' +
-                 '<a href="https://twitter.com/thomashpark" class="twitter-follow-button" data-show-count="false">Follow @thomashpark</a>';
-      $('#tweet').html(html);
-
-      if (typeof twttr !== 'undefined') {
-        twttr.widgets.load();
-      }
 
       if (game.language === 'en') {
         history.replaceState({}, document.title, './');
@@ -256,7 +242,7 @@ var game = {
   loadLevel: function(level) {
     $('#editor').show();
     $('#share').hide();
-    $('#background, #pond').removeClass('wrap').attr('style', '').empty();
+    $('#background, #field').removeClass('wrap').attr('style', '').empty();
     $('#levelsWrapper').hide();
     $('.level-marker').removeClass('current').eq(this.level).addClass('current');
     $('#level-counter .current').text(this.level + 1);
@@ -304,7 +290,7 @@ var game = {
       $('<div/>').addClass('bg animated pulse infinite').appendTo(frog);
 
       $('#background').append(lilypad);
-      $('#pond').append(frog);
+      $('#field').append(frog);
     }
 
     var classes = level.classes;
@@ -377,7 +363,7 @@ var game = {
     var level = levels[game.level];
     var code = $('#code').val();
     var selector = level.selector || '';
-    $('#pond ' +  selector).attr('style', code);
+    $('#field ' +  selector).attr('style', code);
     game.saveAnswer();
   },
 

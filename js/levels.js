@@ -56,7 +56,7 @@ var levels = [
     },
     board: 'g',
     style: { 'justify-content': 'flex-end' },
-    before: "#pond {\n  display: flex;\n",
+    before: "#field {\n  display: flex;\n",
     after: "}"
   },
   {
@@ -116,7 +116,7 @@ var levels = [
     },
     board: 'gy',
     style: { 'justify-content': 'center' },
-    before: "#pond {\n  display: flex;\n",
+    before: "#field {\n  display: flex;\n",
     after: "}"
   },
   {
@@ -176,7 +176,7 @@ var levels = [
     },
     board: 'gyr',
     style: { 'justify-content': 'space-around' },
-    before: "#pond {\n  display: flex;\n",
+    before: "#field {\n  display: flex;\n",
     after: "}"
   },
   {
@@ -236,7 +236,7 @@ var levels = [
     },
     board: 'gyr',
     style: { 'justify-content': 'space-between' },
-    before: "#pond {\n  display: flex;\n",
+    before: "#field {\n  display: flex;\n",
     after: "}"
   },
   {
@@ -296,7 +296,7 @@ var levels = [
     },
     board: 'gyr',
     style: { 'align-items': 'flex-end' },
-    before: "#pond {\n  display: flex;\n",
+    before: "#field {\n  display: flex;\n",
     after: "}"
   },
   {
@@ -356,7 +356,7 @@ var levels = [
     },
     board: 'g',
     style: { 'justify-content': 'center', 'align-items': 'center' },
-    before: "#pond {\n  display: flex;\n",
+    before: "#field {\n  display: flex;\n",
     after: "}"
   },
   {
@@ -416,7 +416,7 @@ var levels = [
     },
     board: 'gyr',
     style: { 'justify-content': 'space-around', 'align-items': 'flex-end' },
-    before: "#pond {\n  display: flex;\n",
+    before: "#field {\n  display: flex;\n",
     after: "}"
   },
   {
@@ -476,7 +476,7 @@ var levels = [
     },
     board: 'gyr',
     style: { 'flex-direction': 'row-reverse' },
-    before: "#pond {\n  display: flex;\n",
+    before: "#field {\n  display: flex;\n",
     after: "}"
   },
   {
@@ -536,7 +536,7 @@ var levels = [
     },
     board: 'gyr',
     style: { 'flex-direction': 'column' },
-    before: "#pond {\n  display: flex;\n",
+    before: "#field {\n  display: flex;\n",
     after: "}"
   },
   {
@@ -596,7 +596,7 @@ var levels = [
     },
     board: 'gyr',
     style: { 'flex-direction': 'row-reverse', 'justify-content': 'flex-end' },
-    before: "#pond {\n  display: flex;\n",
+    before: "#field {\n  display: flex;\n",
     after: "}"
   },
   {
@@ -656,7 +656,7 @@ var levels = [
     },
     board: 'gyr',
     style: { 'flex-direction': 'column', 'justify-content': 'flex-end' },
-    before: "#pond {\n  display: flex;\n",
+    before: "#field {\n  display: flex;\n",
     after: "}"
   },
   {
@@ -716,7 +716,7 @@ var levels = [
     },
     board: 'gyr',
     style: { 'flex-direction': 'column-reverse', 'justify-content': 'space-between' },
-    before: "#pond {\n  display: flex;\n",
+    before: "#field {\n  display: flex;\n",
     after: "}"
   },
   {
@@ -776,7 +776,7 @@ var levels = [
     },
     board: 'gyr',
     style: { 'flex-direction': 'row-reverse', 'justify-content': 'center', 'align-items': 'flex-end' },
-    before: "#pond {\n  display: flex;\n",
+    before: "#field {\n  display: flex;\n",
     after: "}"
   },
   {
@@ -836,9 +836,9 @@ var levels = [
       },
     board: 'gyr',
     selector: '> :nth-child(2)',
-    classes: { '#pond, #background': 'wrap' },
+    classes: { '#field, #background': 'wrap' },
     style: { 'order': '2' },
-    before: "#pond {\n  display: flex;\n}\n\n.yellow {\n",
+    before: "#field {\n  display: flex;\n}\n\n.yellow {\n",
     after: "}"
   },
   {
@@ -898,9 +898,9 @@ var levels = [
     },
     board: 'gggrg',
     selector: '> :nth-child(4)',
-    classes: { '#pond, #background': 'wrap' },
+    classes: { '#field, #background': 'wrap' },
     style: { 'order': '-1' },
-    before: "#pond {\n  display: flex;\n}\n\n.red {\n",
+    before: "#field {\n  display: flex;\n}\n\n.red {\n",
     after: "}"
   },
   {
@@ -961,7 +961,7 @@ var levels = [
     board: 'ggygg',
     selector: '> :nth-child(3)',
     style: { 'align-self': 'flex-end' },
-    before: "#pond {\n  display: flex;\n  align-items: flex-start;\n}\n\n.yellow {\n",
+    before: "#field {\n  display: flex;\n  align-items: flex-start;\n}\n\n.yellow {\n",
     after: "}"
   },
   {
@@ -1022,7 +1022,7 @@ var levels = [
     board: 'ygygg',
     selector: '> .yellow',
     style: { 'align-self': 'flex-end', 'order': '2' },
-    before: "#pond {\n  display: flex;\n  align-items: flex-start;\n}\n\n.yellow {\n",
+    before: "#field {\n  display: flex;\n  align-items: flex-start;\n}\n\n.yellow {\n",
     after: "}"
   },
   {
@@ -1082,7 +1082,7 @@ var levels = [
     },
     board: 'ygggggr',
     style: { 'flex-wrap': 'wrap' },
-    before: "#pond {\n  display: flex;\n",
+    before: "#field {\n  display: flex;\n",
     after: "}"
   },
   {
@@ -1142,7 +1142,7 @@ var levels = [
     },
     board: 'gggggrrrrryyyyy',
     style: { 'flex-direction': 'column', 'flex-wrap': 'wrap' },
-    before: "#pond {\n  display: flex;\n",
+    before: "#field {\n  display: flex;\n",
     after: "}"
   },
   {
@@ -1202,7 +1202,7 @@ var levels = [
     },
     board: 'gggggrrrrryyyyy',
     style: { 'flex-flow': 'column wrap' },
-    before: "#pond {\n  display: flex;\n",
+    before: "#field {\n  display: flex;\n",
     after: "}"
   },
   {
@@ -1261,9 +1261,9 @@ var levels = [
       'np': '<p>भ्यागुताहरू पोखरीभरि फैलिएका छन्, तर लिलीप्याडहरू माथि नै थुप्रिएका छन्। तपाईं <code>align-content</code> प्रयोग गरेर धेरै पंक्तिहरू एक-अर्काबाट कति टाढा राख्ने भनेर सेट गर्न सक्नुहुन्छ। यस प्रोपर्टीले तलका मानहरू स्वीकार गर्दछ:</p> <ul> <li><code>flex-start</code>: पंक्तिहरू कन्टेनरको माथि थुप्रिन्छन्।</li> <li><code>flex-end</code>: पंक्तिहरू कन्टेनरको तल थुप्रिन्छन्।</li> <li><code>center</code>: पंक्तिहरू कन्टेनरको ठ्याक्कै बीचमा थुप्रिन्छन्।</li> <li><code>space-between</code>: पंक्तिहरू बीचमा समान दूरीमा देखिन्छन्।</li> <li><code>space-around</code>: पंक्तिहरू चारैतिर समान दूरीमा देखिन्छन्।</li> <li><code>stretch</code>: पंक्तिहरू कन्टेनरमा फिट हुन फैलिन्छन्।</li> </ul> <p>यो अलि जटिल हुन सक्छ, तर <code>align-content</code> ले पंक्तिहरूबीचको दूरी निर्धारण गर्दछ, जबकि <code>align-items</code> ले कन्टेनरभित्र वस्तुहरूको समग्र रूपमा संरेखण निर्धारण गर्दछ। जब केवल एउटा पंक्ति हुन्छ, <code>align-content</code> को कुनै प्रभाव हुँदैन।</p>',
     },
     board: 'ggggggggggggggg',
-    classes: { '#pond, #background': 'wrap' },
+    classes: { '#field, #background': 'wrap' },
     style: { 'align-content': 'flex-start' },
-    before: "#pond {\n  display: flex;\n  flex-wrap: wrap;\n",
+    before: "#field {\n  display: flex;\n  flex-wrap: wrap;\n",
     after: "}"
   },
   {
@@ -1321,9 +1321,9 @@ var levels = [
       'np': '<p>अब धाराले लिलीप्याडहरू तल थुप्रिएका छन्। भ्यागुताहरूसँग जानका लागि <code>align-content</code> प्रयोग गर्नुहोस्।</p',
     },
     board: 'ggggggggggggggg',
-    classes: { '#pond, #background': 'wrap' },
+    classes: { '#field, #background': 'wrap' },
     style: { 'align-content': 'flex-end' },
-    before: "#pond {\n  display: flex;\n  flex-wrap: wrap;\n",
+    before: "#field {\n  display: flex;\n  flex-wrap: wrap;\n",
     after: "}"
   },
   {
@@ -1382,9 +1382,9 @@ var levels = [
       'np': '<p>भ्यागुताहरूले पार्टी गरिसकेका छन्, तर अब घर जानु पर्ने समय आएको छ। उनीहरूलाई लिलीप्याडसम्म पुर्याउन <code>flex-direction</code> र <code>align-content</code> को संयोजन प्रयोग गर्नुहोस्।</p>',
     },
     board: 'rgggyrgggyrgggy',
-    classes: { '#pond, #background': 'wrap' },
+    classes: { '#field, #background': 'wrap' },
     style: { 'flex-direction': 'column-reverse', 'align-content': 'center' },
-    before: "#pond {\n  display: flex;\n  flex-wrap: wrap;\n",
+    before: "#field {\n  display: flex;\n  flex-wrap: wrap;\n",
     after: "}"
   },
   {
@@ -1444,7 +1444,7 @@ var levels = [
     },
     board: 'rggggyy',
     style: { 'flex-direction': 'column-reverse', 'flex-wrap': 'wrap-reverse', 'align-content': 'space-between', 'justify-content': 'center' },
-    before: "#pond {\n  display: flex;\n",
+    before: "#field {\n  display: flex;\n",
     after: "}"
   }
 ];
@@ -1505,8 +1505,8 @@ var levelWin = {
     'np': '<p>तपाईं जित्नुभयो! तपाईंको फ्लेक्सबक्समा माहिरता कारण, तपाईं सबै भ्यागुताहरूलाई तिनीहरूको लिलीप्याडसम्म मद्दत गर्न सफल हुनु भयो। तिनीहरूको हर्ष कस्तो देखिन्थ्यो भने!</p><p>यदि तपाईंले यो रमाइलो अनुभव गर्नुभयो भने, <a href="https://codepip.com/games/grid-garden/">Grid Garden</a> भ्रमण गर्नुहोस् र CSS लेआउटको अर्को शक्तिशाली नयाँ सुविधा सिक्नुस्। तपाईं अन्य कोडिङ खेलहरू पनि <a href="https://codepip.com/">Codepip</a> मा पाउन सक्नुहुन्छ। र, फ्लेक्सबक्स फ्रोग्गीलाई तपाईंका साथीहरूसँग सेयर गर्न नबिर्सनुहोस्!</p>',
   },
   board: 'gyrgyrgyrgyrgyrgyrgyrgyrg',
-  classes: { '#pond, #background': 'wrap' },
+  classes: { '#field, #background': 'wrap' },
   style: {},
-  before: "#pond {\n  display: flex;\n",
+  before: "#field {\n  display: flex;\n",
   after: "}"
 };
