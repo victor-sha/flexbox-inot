@@ -70,6 +70,7 @@ body {
   margin-top: -0.5rem;
   justify-content: space-between;
   margin-bottom: 12px;
+  align-items: flex-end;
 }
 
 .title {
@@ -77,6 +78,10 @@ body {
   text-transform: uppercase;
   font-family: 'Fredoka One', cursive;
   font-size: 28px;
+}
+
+.logo {
+  height: calc(34.0942px + .72464vw);
 }
 
 pre {
@@ -119,6 +124,7 @@ a:hover {
   font-size: 12px;
   line-height: 1.5;
   z-index: 60;
+  border: 1px solid #fff;
 }
 
 .tooltip:after {
@@ -289,7 +295,6 @@ pre {
 }
 
 .level-marker {
-  float: left;
   display: inline-block;
   width: 30px;
   height: 30px;
